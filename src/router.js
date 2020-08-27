@@ -16,4 +16,6 @@ module.exports = (app) => {
 
     // '/me'
     app.get("/me", require("./routes/me"));
+
+    app.get("/bots/:id", require("./routes/bots/index"))
 }
